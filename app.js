@@ -1,4 +1,5 @@
 function sortear(){
+    // Todas as variaveis recebem numeros inteiros.
     let quantidade = parseInt(document.getElementById('quantidade').value); // Pegando o valor que foi digitado
 
     let de = parseInt(document.getElementById('de').value); // Pegando o valor que foi digitado
