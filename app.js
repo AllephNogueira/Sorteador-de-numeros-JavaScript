@@ -6,5 +6,33 @@ function sortear(){
 
     let ate = parseInt(document.getElementById('ate').value); // Pegando o valor que foi digitado
 
-    console.log(`quantidade: ${quantidade} do numero: ${de} ate o numero ${ate}`);
+    
+    let numerosSorteado = [] // Array vazio com os numeros sorteados. 
+    let numero;
+
+    for (let contador = 0; contador < quantidade; contador++){
+
+        numero = obterNumerosAleatorios(de, ate);
+        numerosSorteado.push(numero);
+
+    }
+
+    Mensagens('resultado', numerosSorteado)
+
+    console.log(numerosSorteado);
+}
+
+
+function obterNumerosAleatorios(min, max){ // mim = numero minimo | max = numero maximo.
+
+    return parseInt(Math.random()* (max - min +1)) + min;
+    // Aqui estamos sorteando numeros inteiros
+    // Entre numero minimo e numero maximo.
+    
+    
+}
+function Mensagens(id, texto){
+
+    document.getElementById(id).innerHTML = `Numeros sorteados foram ${texto}`;
+
 }
