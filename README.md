@@ -1,5 +1,5 @@
-# Esse projeto é um sorteador de numeros onde o usuario tem as funções
-  1 Escolher quantidade de numeros que ele quer sortear 
+# Esse projeto é um sorteador de numeros onde o usuario tem as funções:
+  1 Escolher quantidade de numeros que ele quer sortear: 
     exemplo: Quero sortear 5 numeros
 
   2 Escolher de qual numero ele quer sortear
