@@ -4,9 +4,11 @@ function sortear(){
     let quantidade = parseInt(document.getElementById('quantidade').value); // Pegando o valor que foi digitado
 
     if (quantidade < 1){
-        alert(`'Quantidade de jogos' deve ser maior ou igual a 1, você digitou ${quantidade}`);
+        alert(`'Quantidade de jogos' deve ser maior ou igual a 1, você digitou:  ${quantidade}`);
         return;
     }
+
+    // nova atualização
 
     let de = parseInt(document.getElementById('de').value); // Pegando o valor que foi digitado
 
