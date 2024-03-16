@@ -22,6 +22,7 @@ function sortear(){
         alert('Exemplo de como fazer, QUANTIDADE DE NUMEROS 6, Do numero 1, ate o numero 60. Assim vamos gerar 6 numeros aleatorios do numero 1 ate o 60 ');
         return;
       }
+      // codigo novo
 
     
     let numerosSorteado = []; // Array vazio com os numeros sorteados. 
