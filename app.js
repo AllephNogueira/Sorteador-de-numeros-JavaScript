@@ -3,9 +3,25 @@ function sortear(){
     // Todas as variaveis recebem numeros inteiros.
     let quantidade = parseInt(document.getElementById('quantidade').value); // Pegando o valor que foi digitado
 
+    if (quantidade < 1){
+        alert(`'Quantidade de jogos' deve ser maior ou igual a 1, você digitou ${quantidade}`);
+        return;
+    }
+
     let de = parseInt(document.getElementById('de').value); // Pegando o valor que foi digitado
 
+
     let ate = parseInt(document.getElementById('ate').value); // Pegando o valor que foi digitado
+
+    if(de > ate){
+        alert('"DO NUMERO" é maior que "ATE O NUMERO", corrija esse campo por favor! ')
+        return;
+    }
+    if (quantidade > (ate - de + 1)) {
+        alert(`Voce digitou a 'QUANTIDADE ${quantidade}' de numeros, 'DO NUMERO ${de}', 'ATE O NUMERO ${ate}'. Isso vai gerar um erro de logica, corrija seu campo por favor. `);
+        alert('Exemplo de como fazer, QUANTIDADE DE NUMEROS 6, Do numero 1, ate o numero 60. Assim vamos gerar 6 numeros aleatorios do numero 1 ate o 60 ');
+        return;
+      }
 
     
     let numerosSorteado = []; // Array vazio com os numeros sorteados. 
@@ -22,6 +38,7 @@ function sortear(){
             // Ele retorna um TRUE e sortea outro numero
 
                 numero = obterNumerosAleatorios(de, ate);
+                alert('Tentando obter número inédito');
         }
         
         numerosSorteado.push(numero);  
