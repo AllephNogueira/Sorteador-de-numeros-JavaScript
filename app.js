@@ -38,7 +38,7 @@ function sortear(){
             // Ele retorna um TRUE e sortea outro numero
 
                 numero = obterNumerosAleatorios(de, ate);
-                alert('Tentando obter número inédito');
+                
         }
         
         numerosSorteado.push(numero);  
